@@ -1,17 +1,26 @@
 import { useState, useEffect, useRef } from 'react';
 import './index.css';
-
+import eagle from "../image/eagel1.jpg";
+import owl from "../image/owl1.jpg";
+import crow from "../image/crow.jpg";
+import butterfly from "../image/butterfly1.jpeg";
+import owl2 from "../image/owl2.jpg";
+import eagle3 from "../image/eagel3.jpg";
+import king from "../image/kingfirser2.jpeg";
+import parrot from "../image/parrot2.jpg";
+import heron from "../image/heron.jpeg";
+import butter2 from "../image/butterfly2.jpg";
 const images = [
-    { url: 'image/eagel1.jpg', name: 'EAGLE', description: 'Eagles are powerful birds of prey.' },
-    { url: 'image/owl1.jpg', name: 'OWL', description: 'Owls are known for their nocturnal habits.' },
-    { url: 'image/crow.jpg', name: 'CROW', description: 'Crows are intelligent and adaptable birds.' },
-    { url: 'image/butterfly1.jpeg', name: 'BUTTERFLY', description: 'Butterflies are colorful and graceful.' },
-    { url: 'image/owl2.jpg', name: 'OWL', description: 'Owls have excellent night vision.' },
-    { url: 'image/eagel3.jpg', name: 'EAGLE', description: 'Eagles symbolize strength and freedom.' },
-    { url: 'image/kingfirser2.jpeg', name: 'KINGFISHER', description: 'Kingfishers are expert fish hunters.' },
-    { url: 'image/parrot2.jpg', name: 'PARROT', description: 'Parrots are known for their vibrant colors.' },
-    { url: 'image/heron.jpeg', name: 'HERON', description: 'Herons are wading birds with long legs.' },
-    { url: 'image/butterfly2.jpg', name: 'BUTTERFLY', description: 'Butterflies undergo metamorphosis.' },
+    { url: eagle, name: 'EAGLE', description: 'Eagles are powerful birds of prey.' },
+    { url: owl, name: 'OWL', description: 'Owls are known for their nocturnal habits.' },
+    { url: crow, name: 'CROW', description: 'Crows are intelligent and adaptable birds.' },
+    { url: butterfly, name: 'BUTTERFLY', description: 'Butterflies are colorful and graceful.' },
+    { url: owl2, name: 'OWL', description: 'Owls have excellent night vision.' },
+    { url: eagle3, name: 'EAGLE', description: 'Eagles symbolize strength and freedom.' },
+    { url: king, name: 'KINGFISHER', description: 'Kingfishers are expert fish hunters.' },
+    { url: parrot, name: 'PARROT', description: 'Parrots are known for their vibrant colors.' },
+    { url: heron, name: 'HERON', description: 'Herons are wading birds with long legs.' },
+    { url: butter2, name: 'BUTTERFLY', description: 'Butterflies undergo metamorphosis.' },
 ];
 
 const ImageSlider = () => {
